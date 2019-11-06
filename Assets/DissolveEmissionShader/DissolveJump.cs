@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class DissolveJump : MonoBehaviour {
 
-    Material mat;
+    List<Material> mats;
     Vector3[] floatingPositions;
     int index = 0;
     bool hasJumped = false; 
@@ -10,7 +11,20 @@ public class DissolveJump : MonoBehaviour {
     private float animationTime = 0.0f;
     
     private void Start() {
-        mat = GetComponent<Renderer>().material;
+       
+        mats = new List<Material>();
+        mats.AddRange(GetComponent<Renderer>().materials);
+
+        foreach (Transform child in transform)
+        {
+            if (child.GetComponent<Renderer>())
+            {
+                Material[] childmat = child.GetComponent<Renderer>().materials;
+
+                mats.AddRange(childmat);
+            }
+            
+        }
 
         floatingPositions = new Vector3[4];
         floatingPositions[3] = transform.localPosition;
@@ -34,7 +48,12 @@ public class DissolveJump : MonoBehaviour {
             }
         } else{
             hasJumped = false;
-            mat.SetFloat("_DissolveAmount", dissolveAmount);
+           
+            
+            for (int i = 0; i < mats.Count; i++)
+            {
+                mats[i].SetFloat("_DissolveAmount", dissolveAmount);
+            }
         }
        
         
@@ -60,4 +79,4 @@ public class DissolveJump : MonoBehaviour {
             isEnabled = true;
         }
     }
-    }
+}

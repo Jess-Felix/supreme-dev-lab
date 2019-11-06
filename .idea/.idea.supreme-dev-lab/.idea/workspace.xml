@@ -13,6 +13,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/DissolveEmissionShader/DissolveJump.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/c3/a9d74959/Renderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerScene.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -54,10 +55,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="11192">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="11192" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -73,6 +74,8 @@
       <option name="presentableId" value="Default" />
       <updated>1572803148382</updated>
       <workItem from="1572803159864" duration="5350000" />
+      <workItem from="1572992518738" duration="3460000" />
+      <workItem from="1573070040651" duration="4245000" />
     </task>
     <servers />
   </component>
@@ -86,7 +89,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -102,7 +107,30 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/DissolveEmissionShader/DissolveJump.cs</url>
+          <line>54</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/DissolveEmissionShader/DissolveJump.cs" initialLine="35">
+            <startOffsets>
+              <option value="1578" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1596" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <reveal-manager>
+      <revealed-members>
+        <RevealItemInfo typeName="UnityEngine.MeshRenderer" fieldName="materials" />
+      </revealed-members>
+    </reveal-manager>
+    <watches-manager>
+      <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
+        <watch expression="mat" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
