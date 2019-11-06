@@ -19,29 +19,26 @@ public class TriggerScene : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other) {
        
-     //   if (other.tag == "Player")
+        if (other.tag == "Player"){
+         
+           
+            switch (SceneManager.GetActiveScene().name)
+            {
+                case "FirstRoom":
+                    SceneManager.LoadScene("ThirdRoom");
+                    break;
 
-     //   {
-      //      SceneManager.LoadScene("ThirdRoom");
-     //   }
-       
-        switch (SceneManager.GetActiveScene().name)
-        {
-            case "FirstRoom":
-                SceneManager.LoadScene("ThirdRoom");
-                break;
+                case "ThirdRoom":
+                    SceneManager.LoadScene("FourthCorridor");
+                    break;
 
-            case "ThirdRoom":
-                SceneManager.LoadScene("FourthCorridor");
-                break;
-
-            case "FourthCorridor":
-                SceneManager.LoadScene("FifthCorridor");
-                break;
+                case "FourthCorridor":
+                    SceneManager.LoadScene("FifthCorridor");
+                    break;
+            }
         }
-
 
 
     }
 }
-
+    
