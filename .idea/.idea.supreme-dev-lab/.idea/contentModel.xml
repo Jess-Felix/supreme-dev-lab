@@ -293,9 +293,12 @@
         <e p="Scripts" t="Include">
           <e p="FloatBehavior.cs" t="Include" />
           <e p="Input_Control.cs" t="Include" />
+          <e p="PlatformCollapse.cs" t="Include" />
           <e p="TriggerScene.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
+          <e p="Double Sided Emissive Diffuse.shader" t="Include" />
+          <e p="Double Sided Standard Diffuse Bump.shader" t="Include" />
           <e p="Fog.shader" t="Include" />
         </e>
         <e p="Starfield Skybox" t="Include">

@@ -13,7 +13,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/DissolveEmissionShader/DissolveJump.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58C54DEF-84EA-4B3B-B28C-35158ED32599/74/1cc5c7a5/Void.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Minimalist/Shaders/BuiltInRenderPipeline/Minimalist Standard.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/c3/a9d74959/Renderer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlatformCollapse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input_Control.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerScene.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -24,16 +28,24 @@
         <option value="$PROJECT_DIR$/Assets/NewSurfaceShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerScene.cs" />
         <option value="$PROJECT_DIR$/Assets/DissolveEmissionShader/DissolveJump.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Dissolve_Platform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlatformColapse.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input_Control.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlatformCollapse.cs" />
+        <option value="$PROJECT_DIR$/Assets/Minimalist/Shaders/BuiltInRenderPipeline/Minimalist Standard_nofaceculling .shader" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/Minimalist Standard.shader" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1T7FIMl2uVfixX307wErqEmuMvf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/sdk" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -76,6 +88,7 @@
       <workItem from="1572803159864" duration="5350000" />
       <workItem from="1572992518738" duration="3460000" />
       <workItem from="1573070040651" duration="4245000" />
+      <workItem from="1573320925850" duration="18065000" />
     </task>
     <servers />
   </component>
@@ -99,6 +112,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
