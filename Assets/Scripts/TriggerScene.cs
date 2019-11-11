@@ -6,9 +6,15 @@ using UnityEngine.SceneManagement;
 public class TriggerScene : MonoBehaviour
 
 {
+    public AudioSource doorAudio;
+
+
     // Start is called before the first frame update
     void Start()
     {
+
+        doorAudio = GetComponent<AudioSource>();
+
 
     }
 
@@ -20,13 +26,16 @@ public class TriggerScene : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
        
         if (other.tag == "Player"){
-         
-           
+            if (!doorAudio.isPlaying)
+            {
+                doorAudio.Play();
+            }
+
             switch (SceneManager.GetActiveScene().name)
             {
                 case "FirstRoom":
                     SceneManager.LoadScene("ThirdRoom");
-                    break;
+                break;
 
                 case "ThirdRoom":
                     SceneManager.LoadScene("FourthCorridor");
@@ -36,6 +45,8 @@ public class TriggerScene : MonoBehaviour
                     SceneManager.LoadScene("FifthCorridor");
                     break;
             }
+            DontDestroyOnLoad(this.gameObject);
+
         }
 
 

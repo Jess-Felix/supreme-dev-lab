@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class DissolveJump : MonoBehaviour {
 
+    public AudioSource dissolveAudio;
+
     List<Material> mats;
     Vector3[] floatingPositions;
     int index = 0;
@@ -11,7 +13,9 @@ public class DissolveJump : MonoBehaviour {
     private float animationTime = 0.0f;
     
     private void Start() {
-       
+
+        dissolveAudio = GetComponent<AudioSource>();
+
         mats = new List<Material>();
         mats.AddRange(GetComponent<Renderer>().materials);
 
@@ -45,11 +49,16 @@ public class DissolveJump : MonoBehaviour {
                 transform.localPosition = floatingPositions[index];
                 IncIndex();
                 hasJumped = true;
+
+
             }
         } else{
             hasJumped = false;
-           
-            
+
+            if (!dissolveAudio.isPlaying)
+            {
+                dissolveAudio.Play();
+            }
             for (int i = 0; i < mats.Count; i++)
             {
                 mats[i].SetFloat("_DissolveAmount", dissolveAmount);
