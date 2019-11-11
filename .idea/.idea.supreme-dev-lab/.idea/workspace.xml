@@ -18,6 +18,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/c3/a9d74959/Renderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlatformCollapse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Input_Control.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerCensorEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FloatBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerScene.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -34,6 +36,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlatformCollapse.cs" />
         <option value="$PROJECT_DIR$/Assets/Minimalist/Shaders/BuiltInRenderPipeline/Minimalist Standard_nofaceculling .shader" />
         <option value="$PROJECT_DIR$/Assets/Shaders/Minimalist Standard.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerCensorEffect.cs" />
       </list>
     </option>
   </component>
@@ -89,6 +92,7 @@
       <workItem from="1572992518738" duration="3460000" />
       <workItem from="1573070040651" duration="4245000" />
       <workItem from="1573320925850" duration="18065000" />
+      <workItem from="1573429125592" duration="5271000" />
     </task>
     <servers />
   </component>

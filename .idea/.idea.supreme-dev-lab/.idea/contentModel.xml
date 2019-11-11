@@ -7,6 +7,14 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="CensorEffect" t="Include">
+          <e p="Readme.txt" t="Include" />
+          <e p="Shaders" t="Include">
+            <e p="CensorShader.shader" t="Include" />
+            <e p="CensorShaderMaskedCutout.shader" t="Include" />
+            <e p="CensorShaderMaskedSmooth.shader" t="Include" />
+          </e>
+        </e>
         <e p="DissolveEmissionShader" t="Include">
           <e p="DissolveEmission.shader" t="Include" />
           <e p="DissolveJump.cs" t="Include" />
@@ -294,6 +302,7 @@
           <e p="FloatBehavior.cs" t="Include" />
           <e p="Input_Control.cs" t="Include" />
           <e p="PlatformCollapse.cs" t="Include" />
+          <e p="TriggerCensorEffect.cs" t="Include" />
           <e p="TriggerScene.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
