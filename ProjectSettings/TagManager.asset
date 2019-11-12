@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FallingPlatform
   - Pixel
+  - FallingAudio
   layers:
   - Default
   - TransparentFX
