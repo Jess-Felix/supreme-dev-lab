@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 public class Input_Control : MonoBehaviour
@@ -7,7 +6,7 @@ public class Input_Control : MonoBehaviour
     public GameObject vrCamera;
     private Rigidbody Rd;
     public AudioSource walkingAudio;
-
+    public float playerSpeed = 2.4f;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +20,7 @@ public class Input_Control : MonoBehaviour
     {
         if (Input.GetButton("Fire2")) {
             // this.transform.position += vrCamera.transform.forward * 2 * Time.deltaTime;
-            Rd.MovePosition(transform.position + vrCamera.transform.forward * 2 * Time.deltaTime);
+            Rd.MovePosition(transform.position + playerSpeed * Time.deltaTime * vrCamera.transform.forward);
 
             if (!walkingAudio.isPlaying)
             {

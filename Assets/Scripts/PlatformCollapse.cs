@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlatformCollapse : MonoBehaviour
 {
+    public Animator fadeOutAnimator, theEndFadingAnimator;
     public float delta = 1.5f; // Amount to move left and right from the start point
     public float speed = 2.0f;
     private Vector3 startPos;
@@ -11,6 +13,7 @@ public class PlatformCollapse : MonoBehaviour
     public GameObject player;
     private Rigidbody rb, rbPlayer;
     public float thrust;
+    public float timeToFadeOut = 10.0f;
 
     void Start()
     {
@@ -30,12 +33,24 @@ public class PlatformCollapse : MonoBehaviour
         }
         else if (timer >= 1.0f)
         {
-            isEnabled = false;
-            rbPlayer.constraints = RigidbodyConstraints.None;
-            rbPlayer.isKinematic = false;
-            rb.constraints = RigidbodyConstraints.None;
-            rb.isKinematic = false;
-            
+            timer += Time.deltaTime;
+            if (isEnabled)
+            {
+                isEnabled = false;
+                rbPlayer.constraints = RigidbodyConstraints.None;
+                rbPlayer.isKinematic = false;
+                rb.constraints = RigidbodyConstraints.None;
+                rb.isKinematic = false;
+            }
+        }
+
+        if (timer >= timeToFadeOut) {
+            fadeOutAnimator.SetBool("FadeOut", true);
+            theEndFadingAnimator.SetBool("TheEndFadeIn", true);
+
+            if (timer > timeToFadeOut + 2.0f && Input.GetButton("Fire2") ) {
+                SceneManager.LoadScene("FirstRoom");
+            }
         }
         
     }
