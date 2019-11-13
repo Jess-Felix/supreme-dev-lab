@@ -3,32 +3,26 @@ using System.Collections;
 
 public class PlatformCollapse : MonoBehaviour
 {
-
     public float delta = 1.5f; // Amount to move left and right from the start point
     public float speed = 2.0f;
     private Vector3 startPos;
     bool isEnabled = false;
     public float timer = 0;
-    public GameObject reference;
+    public GameObject player;
     private Rigidbody rb, rbPlayer;
     public float thrust;
-    
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rbPlayer = reference.GetComponent<Rigidbody>();
+        rbPlayer = player.GetComponent<Rigidbody>();
         startPos = transform.position;
-
     }
 
     void Update()
-    
     {
-        
         if (isEnabled && timer < 1.0f)
         {
-            Debug.Log(timer);
-
             timer += Time.deltaTime;
             Vector3 v = startPos;
             v.z += delta * Mathf.Sin(Time.time * speed);
@@ -42,12 +36,10 @@ public class PlatformCollapse : MonoBehaviour
             rb.constraints = RigidbodyConstraints.None;
             rb.isKinematic = false;
             
-            
-
         }
-   
         
     }
+
     void FixedUpdate()
     {
         rbPlayer.AddForce(transform.up * thrust);
@@ -58,7 +50,6 @@ public class PlatformCollapse : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-
             isEnabled = true;
         }
     }
