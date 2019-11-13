@@ -1,24 +1,12 @@
 fileFormatVersion: 2
-guid: 2d7dc76bd2e436c409aac3892cb8c5c5
+guid: 53b39f390312bda49a1d501b9018900d
 ModelImporter:
   serializedVersion: 26
-  internalIDToNameTable: []
-  externalObjects:
+  internalIDToNameTable:
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: 59d69edf25ed3504586228cb84114fc4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: 46b840e3515cadb48b2116d5abbcddaa, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.002
-    second: {fileID: 2100000, guid: 2a0e1f70983eef847a5cbc5effb9afd9, type: 2}
+      74: 4781951162920444690
+    second: Armature|ArmatureAction
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -102,7 +90,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
