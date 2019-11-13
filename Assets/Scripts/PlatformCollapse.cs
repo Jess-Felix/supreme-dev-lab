@@ -14,12 +14,15 @@ public class PlatformCollapse : MonoBehaviour
     private Rigidbody rb, rbPlayer;
     public float thrust;
     public float timeToFadeOut = 10.0f;
+    public AudioSource earthquakeAudio;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         rbPlayer = player.GetComponent<Rigidbody>();
         startPos = transform.position;
+        earthquakeAudio = GetComponent<AudioSource>();
+
     }
 
     void Update()
@@ -30,6 +33,11 @@ public class PlatformCollapse : MonoBehaviour
             Vector3 v = startPos;
             v.z += delta * Mathf.Sin(Time.time * speed);
             transform.position = v;
+
+            if (!earthquakeAudio.isPlaying)
+            {
+                earthquakeAudio.Play();
+            }
         }
         else if (timer >= 1.0f)
         {
