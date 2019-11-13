@@ -10,11 +10,14 @@ public class TypeAnimation : MonoBehaviour
     private float timecounted = 0f;
     public float rotationSpeed = 160f;
     public float rotationRadius = 0.45f;
- 
+
+    public AudioSource whooshAudio;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        whooshAudio = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -40,6 +43,11 @@ public class TypeAnimation : MonoBehaviour
             {
                 transform.position = RotateAroundPivot(transform.position, target.position,
                     Quaternion.Euler(0, rotationSpeed*Time.deltaTime, 0));
+            }
+
+            if (!whooshAudio.isPlaying)
+            {
+                whooshAudio.PlayDelayed(0.5f);
             }
 
         }
