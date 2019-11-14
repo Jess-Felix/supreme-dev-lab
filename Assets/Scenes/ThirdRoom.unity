@@ -3188,7 +3188,6 @@ GameObject:
   - component: {fileID: 608702081}
   - component: {fileID: 608702085}
   - component: {fileID: 608702084}
-  - component: {fileID: 608702083}
   - component: {fileID: 608702082}
   m_Layer: 0
   m_Name: Diary 1 (1)
@@ -3224,20 +3223,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floatStrength: 0.055
---- !u!64 &608702083
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 608702080}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &608702084
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3640,7 +3625,6 @@ GameObject:
   - component: {fileID: 751789918}
   - component: {fileID: 751789922}
   - component: {fileID: 751789921}
-  - component: {fileID: 751789920}
   - component: {fileID: 751789919}
   m_Layer: 0
   m_Name: Diary 2 (1)
@@ -3676,20 +3660,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floatStrength: 0.02
---- !u!64 &751789920
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751789917}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &751789921
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4134,7 +4104,6 @@ GameObject:
   - component: {fileID: 913424343}
   - component: {fileID: 913424347}
   - component: {fileID: 913424346}
-  - component: {fileID: 913424345}
   - component: {fileID: 913424344}
   m_Layer: 0
   m_Name: Diary 3 (1)
@@ -4170,20 +4139,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floatStrength: 0.075
---- !u!64 &913424345
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 913424342}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &913424346
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4856,7 +4811,6 @@ GameObject:
   - component: {fileID: 1133149925}
   - component: {fileID: 1133149929}
   - component: {fileID: 1133149928}
-  - component: {fileID: 1133149927}
   - component: {fileID: 1133149926}
   m_Layer: 0
   m_Name: Pixel Effects (1)
@@ -4892,20 +4846,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floatStrength: 0.055
---- !u!64 &1133149927
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1133149924}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1133149928
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6034,7 +5974,6 @@ GameObject:
   - component: {fileID: 1453197830}
   - component: {fileID: 1453197833}
   - component: {fileID: 1453197832}
-  - component: {fileID: 1453197831}
   - component: {fileID: 1453197834}
   - component: {fileID: 1453197836}
   m_Layer: 0
@@ -6060,20 +5999,6 @@ Transform:
   m_Father: {fileID: 55570727}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -9090, z: 0}
---- !u!64 &1453197831
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453197829}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1453197832
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7103,7 +7028,6 @@ GameObject:
   - component: {fileID: 1990773449}
   - component: {fileID: 1990773453}
   - component: {fileID: 1990773452}
-  - component: {fileID: 1990773451}
   - component: {fileID: 1990773450}
   m_Layer: 0
   m_Name: Pixel Effects (2)
@@ -7139,20 +7063,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floatStrength: 0.055
---- !u!64 &1990773451
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990773448}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1990773452
 MeshRenderer:
   m_ObjectHideFlags: 0
